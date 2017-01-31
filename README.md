@@ -28,9 +28,25 @@ I've saved the settings to an [inifile](resize_for_youtube.ini "The ini-file") d
 Maybe Irfanview can do this?
 
 ## ffmpeg
-
+Without resizing, the filnames start at what the camera used as a number.
+The filname must be contained in `"`'s in order to work properly.
 ```
 ffmpeg -start_number 4120 -i "IMG_%04d.JPG" out.mpg
 ```
 
-The filname must be contained in `"`'s in order to work properly.
+After resizing, the files were renamed and I could drop the `start_number` parameter.
+But I still needed to crop the images from the top 240 pixes,
+so I could catch the most interesting part in the video.
+```
+ffmpeg -i "%04d.jpg" -filter:v "crop=1280:720:0:240" out.mpg
+```
+Still it ended up too large, so I added `crf 25` in the libx264 codec setting
+```
+ffmpeg -i "%04d.jpg" -filter:v "crop=1280:720:0:240" -c:v libx264 -preset veryslow -crf 25 out.mpg
+```
+|crf|0|15|20|25|
+--- |---|---|---|
+|size [Mb] | 124|25|10|4
+
+
+
