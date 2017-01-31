@@ -22,7 +22,7 @@ In the batch conversion window:
 	Otherwise, use irfanview for a second run, and crop counting pixels,
 	since the canvas now has the correct width already.
 
-I've saved the settings to an inifile dedicated to resize for youtube.
+I've saved the settings to an [inifile](resize_for_youtube.ini "The ini-file") dedicated to resize for youtube.
 
 ## match histograms.
 Maybe Irfanview can do this?
