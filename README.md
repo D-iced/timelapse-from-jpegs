@@ -7,7 +7,7 @@ guided by https://dlo.me/archives/2015/07/26/making-a-time-lapse-using-ffmpeg-an
 	3. make movie
 
 ## resize
-Probably using [Irfanview](irfanview.com "Irfanview").
+Probably using [Irfanview](http://irfanview.com "Irfanview").
 Because I'm no wizard with Windows CLI.
 
 In the batch conversion window:
@@ -17,7 +17,7 @@ In the batch conversion window:
 	- change the length to one of youtubes preferred widths.
 	Later they can be cropped from top or bottom,
 	you'll probably want to choose these values depending on the resulting movie.
-	[ffmpeg](ffmpeg.org "ffmpeg") can do that for you too.
+	[ffmpeg](http://ffmpeg.org "ffmpeg") can do that for you too.
 	Otherwise, use irfanview for a second run, and crop counting pixels,
 	since the canvas now has the correct width already.
 
