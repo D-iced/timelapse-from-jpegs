@@ -44,9 +44,9 @@ Still it ended up too large, so I added `crf 25` in the libx264 codec setting
 ```
 ffmpeg -i "%04d.jpg" -filter:v "crop=1280:720:0:240" -c:v libx264 -preset veryslow -crf 25 out.mpg
 ```
-|crf|0|15|20|25|
+crf|0|15|20|25|
 --- |---|---|---|
-|size [Mb] | 124|25|10|4
+size [Mb] | 124|25|10|4
 
 
 
