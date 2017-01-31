@@ -8,6 +8,7 @@ guided by https://dlo.me/archives/2015/07/26/making-a-time-lapse-using-ffmpeg-an
 
 ## resize
 Probably using [Irfanview](http://irfanview.com "Irfanview").
+Probably in two steps.
 Because I'm no wizard with Windows CLI.
 
 In the batch conversion window:
@@ -22,7 +23,6 @@ In the batch conversion window:
 	since the canvas now has the correct width already.
 
 I've saved the settings to an inifile dedicated to resize for youtube.
-Probably in two steps.
 
 ## match histograms.
 Maybe Irfanview can do this?
