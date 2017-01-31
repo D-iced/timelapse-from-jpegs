@@ -1,4 +1,4 @@
-# timelapse-from-jpegs#Making timelapse movies from images
+#Making timelapse movies from images
 
 guided by https://dlo.me/archives/2015/07/26/making-a-time-lapse-using-ffmpeg-and-imagemagick/
 
